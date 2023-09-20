@@ -4,10 +4,17 @@ body {
 	box-sizing: border-box;
 	font-size: 15px;
 	line-height: 1.5;
-	color: #000000;
-  background-color:black;
+	
+  background:
+  linear-gradient(to bottom right, #010312 15%, transparent),
+  radial-gradient(circle at 100% 0%, rgba(255,255,255,.2) 10%, transparent 20%) center center / 15px 15px,
+  linear-gradient(to bottom right, #bd3c3c, #7d040a);
     text-align: center;
     min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
@@ -28,12 +35,14 @@ body {
 
 .self-intro {
   margin: 30px;
+  
 }
  
 
 .cd-intro-content h1,
 .cd-intro-content h4,
 .cd-intro-content .cd-btn {
+ 
   opacity: 0;
   animation-delay: 0.3s;
   animation-fill-mode: forwards;
@@ -114,6 +123,7 @@ body {
 #page-intro {
   color: white;
   margin: 40px;
+  
 }
 
 
@@ -166,9 +176,16 @@ h2 {
 }
 
 #graphicDesign {
- background: #000000;
+    background:
+  linear-gradient(to bottom right, #010312 15%, transparent),
+  radial-gradient(circle at 100% 0%, rgba(255,255,255,.2) 10%, transparent 20%) center center / 15px 15px,
+  linear-gradient(to bottom right, #bd3c3c, #7d040a);
+
 }
 
+.illustration1 {
+ margin-top: 30px;
+}
 #illustration {
   margin-top: 100px;
 }
@@ -185,10 +202,10 @@ h2 {
 
 .card {
   margin-top: 50px;
-  margin-left: 50px;
+ 
   width: 400px;
   height: 500px;
-  background-color: #862020;
+  background-color: rgba(45, 42, 42, 0.377)!important;
   border-radius: 10px;
   box-shadow: 4px 8px 16px rgba(93, 20, 20, 0.763);
   overflow: hidden;
@@ -223,18 +240,11 @@ h2 {
   font-size: 1rem;
 }
 
-/* Add hover effect */
-.card:hover {
-  transform: translateY(-10px);
-  transform: scale(110%);
-   box-shadow: 4px 8px 15px rgba(160, 25, 25, 0.763);
-   
 
 
-}
 
 .video-container {
-  background-color: #333!important;
+  background-color: rgba(45, 42, 42, 0.377)!important;
   
 }
 
@@ -252,7 +262,7 @@ h2 {
   position: relative;
   text-align: center;
   width: 100%;
-  background-color: #0f0d0d;
+  background-color: rgba(45, 42, 42, 0.377)!important;
   border-radius: 5px;
   border-top: 5px solid  rgb(207, 25, 25);
 }
@@ -308,14 +318,6 @@ h2 {
 }
 
 
-
-
-
-
-
-
-
-
 h1, h2, h3, h4, h5 {
 	line-height: 1.2;
 	font-weight: 300;
@@ -361,34 +363,18 @@ section.aks-container h2 {
     background-color: azure;
 }
 
-
-
-.main-title {
-    font-family: "Oswald";
+/* .main-title {
+    font-family: "Gotham"!important;
     font-size: 5rem;
     margin-left: 1rem;
     color: rgb(207, 25, 25);
-}
-
-
-
-
+} */
 
 
 p, div {
     font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 
-
-
-
-.photo-container-fluid {
-    margin: 5%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-}
 
 .img {
     max-width: 100%;
@@ -437,10 +423,7 @@ h1 {
     border: none;
   }
 
-  .blackdiv {
-    background-color: black;
-    color: white;
-  }
+ 
 
 .text-center {
     color: black;
@@ -461,3 +444,10 @@ p {
   .reviews {
     margin-top: 50px;
   }
+
+#contact {
+
+  color: #fff!important;
+  margin-top: 50px;
+  font-size:20px;
+}
